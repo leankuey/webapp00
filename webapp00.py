@@ -11,4 +11,4 @@ st.header("Cabeçalho")
 st.subheader("Sub Cabeçalho")
 
 # Use st.write("") para adicionar um texto ao seu Web app
-st.write("Te amo Lilian Maria da Silva")
+st.write("Sei lá")
