@@ -2,13 +2,10 @@
 import streamlit as st
   
 # Use st.title("") para adicionar um TÍTULO ao seu Web app
-st.title("BLOCOS ANCHIETA")
+st.title("Arte & Tinta")
 
 # Use st.header("") para adicionar um CABEÇALHO ao seu Web app
-st.header("O JEITO MAIS PRÁTICO DE CALCULAR SEUS BLOCOS.")
-
-# Use st.subheader("") para adicionar um SUB CABEÇALHO ao seu Web app
-st.subheader("Sub Cabeçalho")
+st.header("O JEITO MAI.")
 
 # Use st.write("") para adicionar um texto ao seu Web app
 st.write("Sei lá")
