@@ -7,6 +7,8 @@ st.title("Arte & Tinta")
 # Use st.header("") para adicionar um CABEÇALHO ao seu Web app
 st.header("COLORINDO A SUA OBRA.")
 
+st.whrite("sei la")
+
 def calcular_tinta(altura, largura, rendimento_tinta):
     # Calcula a área da parede
     area_parede = altura * largura
