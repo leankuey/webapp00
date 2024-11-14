@@ -7,4 +7,6 @@ st.title("Arte & Tinta")
 # Use st.header("") para adicionar um CABEÇALHO ao seu Web app
 st.header("COLORINDO A SUA OBRA.")
 
+st.whrite("Digite o tamanho da parede: ")
+
 Parede = float(input("Digite o tamanho total da parede: "))
