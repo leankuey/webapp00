@@ -9,4 +9,4 @@ st.header("COLORINDO A SUA OBRA.")
 
 st.whrite("Digite o tamanho da parede")
 
-Parede = float(input("Digite o tamanho total da parede: "))
+
