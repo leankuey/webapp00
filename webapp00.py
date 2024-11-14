@@ -8,4 +8,4 @@ st.title("Arte & Tinta")
 st.header("COLORINDO A SUA OBRA.")
 
 # Use st.write("") para adicionar um texto ao seu Web app
-st.write("Sei lá")
+st.write("")
