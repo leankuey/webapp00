@@ -9,4 +9,4 @@ st.header("COLORINDO A SUA OBRA.")
 
 st.write("Batata doce")
 
-st.code = '''float(input("Digite a altura da parede: "))
+st.code = float(input("Digite a altura da parede: "))
