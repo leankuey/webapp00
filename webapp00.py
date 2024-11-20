@@ -9,6 +9,3 @@ st.header("COLORINDO A SUA OBRA.")
 
 st.write("Batata doce")
 
-code = '''def hello():
-    print("Hello, Streamlit!")'''
-st.code(code, language="python")
