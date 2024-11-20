@@ -9,9 +9,11 @@ st.header("COLORINDO A SUA OBRA.")
 
 st.write("Batata doce")
 
+st.code("""
 [theme]
 primaryColor="#F39C12"
 backgroundColor="#2E86C1"
 secondaryBackgroundColor="#AED6F1"
 textColor="#FFFFFF"
 font="monospace"
+""")
