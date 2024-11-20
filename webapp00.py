@@ -8,4 +8,3 @@ st.title("Arte & Tinta")
 st.header("COLORINDO A SUA OBRA.")
 
 st.write("Batata doce")
-
