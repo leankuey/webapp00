@@ -12,3 +12,11 @@ st.write("Batata doce")
 prompt = st.chat_input("Say something")
 if prompt:
     st.write(f"Usuario 1: {prompt}")
+
+import streamlit as st
+
+st.button("Reset", type="primary")
+if st.button("Say hello"):
+    st.write("Why hello there")
+else:
+    st.write("Goodbye")
