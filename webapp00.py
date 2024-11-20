@@ -11,4 +11,4 @@ st.write("Batata doce")
 
 prompt = st.chat_input("Say something")
 if prompt:
-    st.write(f"Alan deu a bundinha: {prompt}")
+    st.write(f"Usuario 1: {prompt}")
