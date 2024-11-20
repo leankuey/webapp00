@@ -9,5 +9,3 @@ st.header("COLORINDO A SUA OBRA.")
 
 st.write("Batata doce")
 
-tamanho = st.slider("Qual o tamanho da parede?", 0, 20, 25)
-st.write("Tamanho: ", tamanho, "m2")
