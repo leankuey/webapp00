@@ -11,5 +11,5 @@ st.write("Batata doce")
 
 import streamlit as st
 
-tamanho = st.slider("Qual o tamanho da parede?", 0, 130, 25)
+tamanho = st.slider("Qual o tamanho da parede?", 0, 20, 25)
 st.write("Tamanho: ", tamanho, "m2")
