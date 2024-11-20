@@ -9,6 +9,6 @@ st.header("COLORINDO A SUA OBRA.")
 
 st.write("Batata doce")
 
-st.code = 
-altura = float(input("Digite a altura da parede: "))
-print(altura)
+code = '''def hello():
+    print("Hello, Streamlit!")'''
+st.code(code, language="python")
