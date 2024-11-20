@@ -11,9 +11,9 @@ st.write("Batata doce")
 
 st.code("""
 [theme]
-primaryColor="#F39C12"
-backgroundColor="#2E86C1"
-secondaryBackgroundColor="#AED6F1"
+primaryColor="#FF0000"
+backgroundColor="#FF0000"
+secondaryBackgroundColor="#FF0000"
 textColor="#FFFFFF"
 font="monospace"
 """)
