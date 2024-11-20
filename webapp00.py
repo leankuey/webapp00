@@ -9,11 +9,4 @@ st.header("COLORINDO A SUA OBRA.")
 
 st.write("Batata doce")
 
-st.code("""
-[theme]
-primaryColor="#FF0000"
-backgroundColor="#FF0000"
-secondaryBackgroundColor="#FF0000"
-textColor="#FFFFFF"
-font="monospace"
-""")
+st.code = '''float(input("Digite a altura da parede: "))
