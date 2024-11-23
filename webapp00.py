@@ -39,5 +39,4 @@ else:
             st.success(f"A área útil da parede (descontando portas e janelas) é **{area_util:.2f} metros quadrados**.")
     else:
         st.info("Não há portas ou janelas na parede, a área útil é igual à área total.")
-else:
-    st.info("Por favor, insira valores válidos para altura e comprimento da parede.")
+
