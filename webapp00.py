@@ -24,8 +24,7 @@ else:
     ha_aberturas = st.radio("A parede possui portas ou janelas?", ("Não", "Sim"))
 
     if ha_aberturas == "Sim":
-        area_aberturas = st.number_input(
-            "Digite a área total ocupada pelas portas e janelas (em metros quadrados):",
+        area_aberturas = st.number_input("Digite a área total ocupada pelas portas e janelas (em metros quadrados):",
             min_value=0.0,
             max_value=area_parede,
             format="%.2f",
