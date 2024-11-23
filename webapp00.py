@@ -43,7 +43,24 @@ if altura > 0 and comprimento > 0:
     else:
         st.info("Não há portas ou janelas na parede, a área útil é igual à área total.")
 else:
-    st.info("Por favor, insira valores válidos para altura e comprimento da parede.")
+    st.info("Por favor, insira valores válidos.")
+  
+  # Perguntar ao usuário o rendimento da lata de tinta
+    rendimento_tinta = st.number_input(
+        "Digite o rendimento da lata de tinta (em metros quadrados por litro):",
+        min_value=0.1,
+        format="%.1f",
+    )
+
+    if rendimento_tinta > 0:
+        # Calcular a quantidade de tinta necessária
+        litros_necessarios = area_util / rendimento_tinta
+
+        # Considerar latas inteiras
+        latas_necessarias = -(-litros_necessarios // 1)  # Arredondar para cima
+        st.success(f"Você precisará de aproximadamente {latas_necessarias:.0f} latas de tinta para pintar a parede.")
+else:
+    st.info("Por favor, insira valores válidos.")
 
 
 
