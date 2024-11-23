@@ -45,12 +45,12 @@ if altura > 0 and comprimento > 0:
         format="%.1f",
     )
 
-    if rendimento_tinta > 0:
-        # Calcular a quantidade de tinta necessária
-        litros_necessarios = area_util / rendimento_tinta
-
-        # Considerar latas inteiras
-        latas_necessarias = -(-litros_necessarios // 1)  # Arredondar para cima
-        st.success(  f"Para pintar a parede com pelo menos **duas demãos**, você precisará de aproximadamente **{latas_necessarias:.0f} lata(s)** de tinta de {tamanho_lata:.2f} litros."")
+     if tamanho_lata > 0:
+            latas_necessarias = -(-tinta_necessaria // tamanho_lata)  # Arredonda para cima
+            st.success(
+                f"Para pintar a parede com pelo menos **duas demãos**, você precisará de aproximadamente **{latas_necessarias:.0f} lata(s)** de tinta de {tamanho_lata:.2f} litros."
+            )
+        else:
+            st.warning("Insira um tamanho válido para a lata de tinta!")
 else:
-    st.info("Por favor, insira valores válidos.")
+    st.info("Por favor, insira valores válidos para altura e comprimento da parede.")
