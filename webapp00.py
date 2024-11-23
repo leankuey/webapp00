@@ -13,7 +13,7 @@ st.caption("Este aplicativo foi criado para ajudar você a calcular a quantidade
 altura = st.number_input("Digite a altura da parede (em metros):", min_value=0.0, format="%.2f")
 comprimento = st.number_input("Digite o comprimento da parede (em metros):", min_value=0.0, format="%.2f")
 
-# Calcular área inicial
+# Calcular a área inicial da parede
 if altura > 0 and comprimento > 0:
     area_parede = altura * comprimento
     st.write(f"A área total da parede é **{area_parede:.2f} metros quadrados**.")
@@ -29,6 +29,7 @@ if altura > 0 and comprimento > 0:
             format="%.2f",
         )
 
+        # Calcular a área útil
         if area_aberturas > area_parede:
             st.warning("A área das aberturas não pode ser maior que a área total da parede!")
         else:
@@ -38,14 +39,22 @@ if altura > 0 and comprimento > 0:
         area_util = area_parede
         st.info("Não há portas ou janelas na parede, a área útil é igual à área total.")
 
-    # Perguntar ao usuário o rendimento da lata de tinta
+    # Perguntar sobre o rendimento da tinta
     rendimento_tinta = st.number_input(
-        "Digite o rendimento da lata de tinta (em metros quadrados por litro):",
-        min_value=0.1,
-        format="%.1f",
+        "Digite o rendimento da tinta (em metros quadrados por litro):",
+        min_value=1.0,
+        format="%.2f",
     )
 
-   if tamanho_lata > 0:
+    if rendimento_tinta > 0:
+        # Calcular a quantidade de tinta necessária para duas demãos
+        tinta_necessaria = (area_util * 2) / rendimento_tinta
+
+        # Calcular o número de latas de tinta (arredondando para cima)
+        tamanho_lata = st.number_input(
+            "Digite o tamanho da lata de tinta (em litros):", min_value=0.5, format="%.2f"
+        )
+        if tamanho_lata > 0:
             latas_necessarias = -(-tinta_necessaria // tamanho_lata)  # Arredonda para cima
             st.success(
                 f"Para pintar a parede com pelo menos **duas demãos**, você precisará de aproximadamente **{latas_necessarias:.0f} lata(s)** de tinta de {tamanho_lata:.2f} litros."
@@ -53,4 +62,4 @@ if altura > 0 and comprimento > 0:
         else:
             st.warning("Insira um tamanho válido para a lata de tinta!")
 else:
-    st.info("Por favor, insira valores válidos para altura e comprimento da parede.")
+    st.info("Por favor, insira valores válidos.")
