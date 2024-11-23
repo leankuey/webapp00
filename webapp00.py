@@ -51,6 +51,6 @@ if altura > 0 and comprimento > 0:
 
         # Considerar latas inteiras
         latas_necessarias = -(-litros_necessarios // 1)  # Arredondar para cima
-        st.success(f"Você precisará de aproximadamente {latas_necessarias:.0f} latas de tinta para pintar a parede.")
+        st.success(  f"Para pintar a parede com pelo menos **duas demãos**, você precisará de aproximadamente **{latas_necessarias:.0f} lata(s)** de tinta de {tamanho_lata:.2f} litros."")
 else:
     st.info("Por favor, insira valores válidos.")
