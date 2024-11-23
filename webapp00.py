@@ -9,11 +9,6 @@ st.header("COLORINDO A SUA OBRA.")
 
 st.caption("Este aplicativo foi criado para ajudar você a calcular a quantidade de tinta necessaria para a sua pintura de forma rápida e prática.")
 
-import streamlit as st
-
-# Título do aplicativo
-st.title("Calculadora de Área de Parede")
-
 # Entrada do usuário para altura e comprimento da parede
 altura = st.number_input("Digite a altura da parede (em metros):", min_value=0.0, format="%.2f")
 comprimento = st.number_input("Digite o comprimento da parede (em metros):", min_value=0.0, format="%.2f")
@@ -34,18 +29,16 @@ if altura > 0 and comprimento > 0:
             format="%.2f",
         )
 
-        # Calcular a área útil
         if area_aberturas > area_parede:
             st.warning("A área das aberturas não pode ser maior que a área total da parede!")
         else:
             area_util = area_parede - area_aberturas
             st.success(f"A área útil da parede (descontando portas e janelas) é **{area_util:.2f} metros quadrados**.")
     else:
+        area_util = area_parede
         st.info("Não há portas ou janelas na parede, a área útil é igual à área total.")
-else:
-    st.info("Por favor, insira valores válidos.")
-  
-  # Perguntar ao usuário o rendimento da lata de tinta
+
+    # Perguntar ao usuário o rendimento da lata de tinta
     rendimento_tinta = st.number_input(
         "Digite o rendimento da lata de tinta (em metros quadrados por litro):",
         min_value=0.1,
@@ -61,6 +54,3 @@ else:
         st.success(f"Você precisará de aproximadamente {latas_necessarias:.0f} latas de tinta para pintar a parede.")
 else:
     st.info("Por favor, insira valores válidos.")
-
-
-
