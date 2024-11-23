@@ -45,7 +45,7 @@ if altura > 0 and comprimento > 0:
         format="%.1f",
     )
 
-     if tamanho_lata > 0:
+   if tamanho_lata > 0:
             latas_necessarias = -(-tinta_necessaria // tamanho_lata)  # Arredonda para cima
             st.success(
                 f"Para pintar a parede com pelo menos **duas demãos**, você precisará de aproximadamente **{latas_necessarias:.0f} lata(s)** de tinta de {tamanho_lata:.2f} litros."
