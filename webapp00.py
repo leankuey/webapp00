@@ -18,7 +18,7 @@ with col1:
 # Imagem na coluna 2
 with col2:
     st.image(
-        "https://via.placeholder.com/200x150.png?text=Imagem+2",  # Substitua pela URL ou caminho da segunda imagem
+        "https://cdn.suvinil.com.br/contents/articles/146/image/cover/tinta-acrilica-o-que-e-e-para-que-serve.png,  # Substitua pela URL ou caminho da segunda imagem
         caption="Imagem 2",
         width=200
     )
