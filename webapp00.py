@@ -11,7 +11,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.image(
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLzymcrnB530aavMhkpDoGvvPglk-65SDbQ&s",
-        caption="Imagem 1",
+        caption="",
         width=200
     )
 
