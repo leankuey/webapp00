@@ -5,6 +5,11 @@ st.title("Arte & Tinta")
 st.header("Colorindo a sua obra.")
 st.caption("Calcule a quantidade de tinta necessária para a sua pintura de forma rápida e prática.")
 
+st.header("Envie sua imagem!")
+uploaded_image = st.file_uploader("Carregue uma imagem para visualizar:")
+if uploaded_image:
+    st.image(uploaded_image, caption="Imagem carregada pelo usuário.", use_column_width=True)
+
 # Entradas básicas: altura e comprimento da parede
 altura = st.number_input("Digite a altura da parede (em metros):", min_value=0.0, format="%.2f")
 comprimento = st.number_input("Digite o comprimento da parede (em metros):", min_value=0.0, format="%.2f")
