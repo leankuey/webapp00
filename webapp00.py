@@ -27,7 +27,7 @@ with col3:
     st.image(
         "https://www.globalcolor.com.br/wp-content/uploads/2023/02/latas-de-tinta-colorida-plana-leiga_Easy-Resize.com_-1200x675.jpg",  
         caption="",
-        width=200
+        width=250
     )
 
 # Entradas básicas: altura e comprimento da parede
