@@ -18,7 +18,7 @@ with col1:
 # Imagem na coluna 2
 with col2:
     st.image(
-        "https://api.aecweb.com.br/tematico/img_figuras/tipo-tinta-para-parede_Olho%24%240.webp",caption="",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj3lyrx-wyE40uPwJ2cvuIi3moBxEdMWIwxA&s",caption="",
         width=200
     )
 
