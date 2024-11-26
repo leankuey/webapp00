@@ -6,8 +6,8 @@ st.header("Colorindo a sua obra.")
 st.caption("Calcule a quantidade de tinta necessária para a sua pintura de forma rápida e prática.")
 
 st.image(
-    "https://www.interlarinterlagos.com.br/blog/wp-content/uploads/2023/05/Tipos_de_tintas_-_Home_Blog-1140x760.jpg",  # URL da imagem ou caminho local
-    caption="Esta é uma imagem fixa no aplicativo.",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLzymcrnB530aavMhkpDoGvvPglk-65SDbQ&s",
+    caption="Imagem carregada da URL.",
     use_column_width=True
 )
 
