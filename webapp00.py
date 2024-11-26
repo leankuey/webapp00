@@ -18,15 +18,15 @@ with col1:
 # Imagem na coluna 2
 with col2:
     st.image(
-        "https://cdn.suvinil.com.br/contents/articles/146/image/cover/tinta-acrilica-o-que-e-e-para-que-serve.png",caption="Imagem 2",
-        width=200
+        "https://cdn.suvinil.com.br/contents/articles/146/image/cover/tinta-acrilica-o-que-e-e-para-que-serve.png",caption="",
+        width=400
     )
 
 # Imagem na coluna 3
 with col3:
     st.image(
         "https://via.placeholder.com/200x150.png?text=Imagem+3",  # Substitua pela URL ou caminho da terceira imagem
-        caption="Imagem 3",
+        caption="",
         width=200
     )
 
