@@ -7,8 +7,8 @@ st.caption("Calcule a quantidade de tinta necessária para a sua pintura de form
 
 st.image(
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLzymcrnB530aavMhkpDoGvvPglk-65SDbQ&s",
-    caption="Imagem carregada da URL.",
-    use_column_width=True
+    caption="Imagem redimensionada.",
+    width=200  # Largura da imagem em pixels
 )
 
 # Entradas básicas: altura e comprimento da parede
