@@ -5,11 +5,31 @@ st.title("Arte & Tinta")
 st.header("Colorindo a sua obra.")
 st.caption("Calcule a quantidade de tinta necessária para a sua pintura de forma rápida e prática.")
 
-st.image(
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLzymcrnB530aavMhkpDoGvvPglk-65SDbQ&s",
-    caption="Imagem redimensionada.",
-    width=200  # Largura da imagem em pixels
-)
+col1, col2, col3 = st.columns(3)
+
+# Imagem na coluna 1
+with col1:
+    st.image(
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLzymcrnB530aavMhkpDoGvvPglk-65SDbQ&s",
+        caption="Imagem 1",
+        width=200
+    )
+
+# Imagem na coluna 2
+with col2:
+    st.image(
+        "https://via.placeholder.com/200x150.png?text=Imagem+2",  # Substitua pela URL ou caminho da segunda imagem
+        caption="Imagem 2",
+        width=200
+    )
+
+# Imagem na coluna 3
+with col3:
+    st.image(
+        "https://via.placeholder.com/200x150.png?text=Imagem+3",  # Substitua pela URL ou caminho da terceira imagem
+        caption="Imagem 3",
+        width=200
+    )
 
 # Entradas básicas: altura e comprimento da parede
 altura = st.number_input("Digite a altura da parede (em metros):", min_value=0.0, format="%.2f")
