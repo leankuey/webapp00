@@ -18,14 +18,15 @@ with col1:
 # Imagem na coluna 2
 with col2:
     st.image(
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj3lyrx-wyE40uPwJ2cvuIi3moBxEdMWIwxA&s",caption="",
+        "https://cdn.suvinil.com.br/contents/articles/146/image/cover/tinta-acrilica-o-que-e-e-para-que-serve.png",
+        caption="",
         width=200
     )
 
 # Imagem na coluna 3
 with col3:
     st.image(
-        "https://www.globalcolor.com.br/wp-content/uploads/2023/02/latas-de-tinta-colorida-plana-leiga_Easy-Resize.com_-1200x675.jpg",  
+        "https://www.globalcolor.com.br/wp-content/uploads/2023/02/latas-de-tinta-colorida-plana-leiga_Easy-Resize.com_-1200x675.jpg",
         caption="",
         width=250
     )
@@ -68,19 +69,14 @@ if altura > 0 and comprimento > 0:
         area_util = area_parede - area_total_aberturas
         st.success(f"A área útil da parede (descontando portas e janelas) é **{area_util:.2f} m²**.")
 
-    # Calcular quantidade de tinta necessária
+    # Calcular quantidade de latas com a tinta patenteada
     if area_util > 0:
-        rendimento_tinta = st.number_input(
-            "Digite o rendimento da tinta (em m² por litro):", min_value=1.0, format="%.2f"
+        rendimento_tinta = 100  # Rendimento fixo: 100 m² por galão de 18 litros
+        tamanho_lata = 18  # Tamanho do galão em litros
+        tinta_necessaria = area_util / rendimento_tinta
+        latas_necessarias = -(-tinta_necessaria // 1)  # Arredondamento para cima
+        st.success(
+            f"Com nossa tinta patenteada que rende 100 m² por galão de 18 litros, você precisará de aproximadamente **{latas_necessarias:.0f} galão(ões)**."
         )
-        tamanho_lata = st.number_input(
-            "Digite o tamanho da lata de tinta (em litros):", min_value=0.5, format="%.2f"
-        )
-        if rendimento_tinta > 0 and tamanho_lata > 0:
-            tinta_necessaria = (area_util * 2) / rendimento_tinta  # Duas demãos
-            latas_necessarias = -(-tinta_necessaria // tamanho_lata)  # Arredondamento para cima
-            st.success(
-                f"Você precisará de aproximadamente **{latas_necessarias:.0f} lata(s)** de {tamanho_lata:.2f} litros."
-            )
 else:
     st.info("Por favor, insira valores válidos para altura e comprimento.")
