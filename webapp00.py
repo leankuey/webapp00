@@ -25,7 +25,7 @@ with col2:
 # Imagem na coluna 3
 with col3:
     st.image(
-        "https://via.placeholder.com/200x150.png?text=Imagem+3",  # Substitua pela URL ou caminho da terceira imagem
+        "https://www.globalcolor.com.br/wp-content/uploads/2023/02/latas-de-tinta-colorida-plana-leiga_Easy-Resize.com_-1200x675.jpg",  
         caption="",
         width=200
     )
