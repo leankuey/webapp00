@@ -18,8 +18,8 @@ with col1:
 # Imagem na coluna 2
 with col2:
     st.image(
-        "https://cdn.suvinil.com.br/contents/articles/146/image/cover/tinta-acrilica-o-que-e-e-para-que-serve.png",caption="",
-        width=400
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj3lyrx-wyE40uPwJ2cvuIi3moBxEdMWIwxA&s",caption="",
+        width=200
     )
 
 # Imagem na coluna 3
