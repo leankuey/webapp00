@@ -14,7 +14,7 @@ if altura > 0 and comprimento > 0:
     area_parede = altura * comprimento
     st.write(f"A área total da parede é **{area_parede:.2f} m²**.")
 
-    # Inicializar área ocupada por portas e janelas
+    # Inicializar áreas de portas e janelas
     area_portas = 0
     area_janelas = 0
 
@@ -34,7 +34,7 @@ if altura > 0 and comprimento > 0:
             area_janelas = altura_janela * comprimento_janela
             st.info(f"A área ocupada pela janela é **{area_janelas:.2f} m²**.")
 
-    # Calcular a área útil
+    # Somar áreas de portas e janelas e calcular a área útil
     area_total_aberturas = area_portas + area_janelas
     if area_total_aberturas > area_parede:
         st.warning("A área total das aberturas não pode ser maior que a área total da parede!")
